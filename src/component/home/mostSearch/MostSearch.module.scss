@@ -1,0 +1,64 @@
+.mostsearch-wrapper {
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 1px 1px 12px 0 #193b680f;
+
+  .no-of-days {
+    color: grey;
+    font-size: 13px;
+    text-align: end;
+  }
+
+  .mostsearch-product-listing {
+    margin-top: 1rem;
+    .item {
+      display: flex;
+
+      gap: 15px;
+      align-items: center;
+      margin: 10px 0;
+
+      div {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        flex: 1 1 150px;
+
+        p {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: rgb(49, 49, 58);
+        }
+      }
+      .item-header-name {
+        p {
+          color: grey;
+          font-weight: 500;
+        }
+      }
+      .item-image {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .item-name {
+        p {
+          font-weight: 600;
+          text-transform: capitalize;
+          font-size: 14px;
+        }
+      }
+
+      .item-platform {
+        filter: blur(2px);
+      }
+      .item-view {
+        p {
+          color: rgb(40, 119, 245);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

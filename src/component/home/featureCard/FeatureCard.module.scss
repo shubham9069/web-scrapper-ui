@@ -1,0 +1,90 @@
+.card-wrapper {
+  padding: 1rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(141, 141, 185, 0.16) 0%,
+    rgba(8, 8, 12, 0) 100%
+  );
+  border: 1px solid #28263f;
+  padding: 31px;
+
+  .feature-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 120px;
+    width: 120px;
+    z-index: 1;
+    opacity: 0.6;
+  }
+  * {
+    position: relative;
+    z-index: 2;
+  }
+  .feature-title {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 0.5rem 0;
+    color: white;
+
+    &.ai {
+      font-size: 30px;
+      font-weight: 500;
+      font-family: fantasy;
+      letter-spacing: 1.2px;
+      color: #28263f;
+      span {
+        background: linear-gradient(268deg, #dd57ff 0%, #3d58e5 100%);
+        -webkit-background-clip: text; /* Doesn't work on IE*/
+        -moz-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .feature-description {
+    font-weight: 400;
+    font-size: 15px;
+    flex: 1;
+    line-height: 1.5;
+    &.ai {
+      font-weight: 500;
+      color: #3e3c51;
+    }
+  }
+
+  .feature-button {
+    margin-top: 1rem;
+    display: flex;
+    gap: 5px;
+    padding: 8px 12px;
+    align-items: center;
+    border: 3px solid #1f1f33;
+    background: #101019;
+    cursor: pointer;
+    width: fit-content;
+    border-radius: 4px;
+
+    a {
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 1.2px;
+      color: #cccce0;
+    }
+
+    &.ai {
+      background: linear-gradient(268deg, #dd57ff 0%, #3d58e5 100%);
+      border: none;
+      a {
+        color: white;
+      }
+    }
+  }
+}

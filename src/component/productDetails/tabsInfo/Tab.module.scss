@@ -1,0 +1,17 @@
+.tab {
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: white;
+  &.active-tab {
+    border: 2px solid #13b7f2;
+
+    font-weight: 600;
+  }
+}
